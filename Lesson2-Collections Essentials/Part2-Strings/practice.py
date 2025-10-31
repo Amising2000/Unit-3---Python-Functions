@@ -21,3 +21,15 @@ def create_slug(title):
     return title.strip().lower().replace(' ', '-')
 
 print(create_slug('My first Blog post'))
+
+
+# 3
+def format_phone_number(phone):
+    cleaned_number = ''
+    for num in phone:
+        if num.isdigit():
+            cleaned_number += num
+    if not len(cleaned_number) == 10:
+        return 'Invalid phone number'
+    return f"({cleaned_number[0:3]}) {cleaned_number[3:6]}-{cleaned_number[6:]}"
+print(format_phone_number('555-123-6578'))

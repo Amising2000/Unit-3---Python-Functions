@@ -3,8 +3,8 @@
 # "key_c": False
 
 # 2
-# 120
-# 60.0
+120
+60.0
 
 # 3
 def get_user_bio(user):

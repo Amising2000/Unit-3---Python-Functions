@@ -40,12 +40,11 @@ def build_playlist(playlist_name, **songs):
         >>> build_playlist("Empty Playlist")
         {"name": "Empty Playlist", "songs": {}, "total_plays": 0}
     """
-    # TODO: Write your code here (replace 'pass')
-    # Hint 1: **songs is already a dictionary!
-    # Hint 2: Use sum(songs.values()) to get total plays
-    # Hint 3: Wrap the sum in try/except in case of bad values
-    # Hint 4: Return a dictionary with "name", "songs", and "total_plays"
-    pass
+    try:
+        total_plays = sum(songs.values())
+    except:
+        total_plays = 0
+    return {"name": playlist_name, "songs": songs, "total_plays": total_plays}
 
 
 # =============================================================================

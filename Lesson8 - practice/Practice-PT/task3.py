@@ -38,12 +38,13 @@ def playlist_stats(*durations):
         >>> playlist_stats()
         (0, 0, 0.0)
     """
-    # TODO: Write your code here (replace 'pass')
-    # Hint 1: Check if durations is empty FIRST (if not durations:)
-    # Hint 2: Use sum() and len() for calculations
-    # Hint 3: Return three values separated by commas
-    pass
-
+    if durations:
+        total_time = sum(durations)
+        song_count = len(durations)
+        average_duration = total_time / song_count
+        return total_time, song_count, average_duration
+    else:
+        return 0, 0, 0.0
 
 # =============================================================================
 # TEST CODE - Run this file to test your solution

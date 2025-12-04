@@ -36,9 +36,7 @@ def create_song(title, artist="Unknown Artist", duration=180):
         >>> create_song("Bohemian Rhapsody", artist="Queen", duration=354)
         {"title": "Bohemian Rhapsody", "artist": "Queen", "duration": 354}
     """
-    # TODO: Write your code here (replace 'pass')
-    # Hint: Create a dictionary with the three keys and return it
-    pass
+    return {"title": title, "artist": artist, "duration": duration}
 
 
 # =============================================================================
